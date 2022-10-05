@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment #7</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Typescript Assignment #7 By Hafiz Tamoor Iqbal</h1>
+
+  <div>
+    <h2>
+      1. Write a ts program to find length of a string.
+    </h2>
+    <p>
+      <code>
+          let userString: string | null = prompt("Please Enter String");<br>
+          let output1 = document.getElementById("output1") as HTMLDivElement | null;<br>
+          if (output1 && userString) {<br>
+            output1.innerHTML = `length of a string ${userString} is : ${userString.length}`;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output1"></code>
+    </p>
+    <button onclick="Question1()">
+      find length of a string</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+  <div>
+    <h2>
+      2. Write a ts program to copy one string to another string.
+    </h2>
+    <p>
+      <code>
+          let userString: string | null = prompt("Please Enter String");<br>
+          let output2 = document.getElementById("output2") as HTMLDivElement | null;<br>
+          if (output2 && userString) {<br>
+            output2.innerHTML = `Original string is ${userString} :  and copy string is ${userString.slic<br>e()}`;
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output2"></code>
+    </p>
+    <button onclick="Question2()">copy one string to another string</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      3. Write a ts program to concatenate two strings.
+    </h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Please Enter String");<br>
+          let userString2: string | null = prompt("Please Enter String");<br>
+          let output3 = document.getElementById("output3") as HTMLDivElement | null;<br>
+          if (output3 && userString1 && userString2) {<br>
+            output3.innerHTML = `concatenate ${userString1} and ${userString2} is :<br> ${userString1.concat(u<br>serString2)}`;
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output3"></code>
+    </p>
+    <button onclick="Question3()">concatenate two strings</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      4. Write a ts program to compare two strings.
+    </h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Please Enter 1st String");<br>
+          let userString2: string | null = prompt("Please Enter 2nd String");<br>
+          let output4 = document.getElementById("output4") as HTMLDivElement | null;<br>
+          if (output4 && userString1 && userString2) {<br>
+            output4.innerHTML = `compare string 1 ${userString1} to <br>string 2 ${userString2} is :<br>
+            ${(userString1(userString2)==0)?<br>"true":"false"}`;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output4"></code>
+    </p>
+    <button onclick="Question4()">compare two strings</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>5. Write a ts program to convert lowercase string to uppercase.</h2>
+    <p>
+      <code>
+            let userString1: string | null = prompt("Please Enter 1st String");<br>
+            let output5 = document.getElementById("output5") as HTMLDivElement | null;<br>
+            if (output5 && userString1 ) {<br>
+              output5.innerHTML = `lowercase ${userString1} : uppercase ${userString1.toUpperCase()} <br>`;
+            }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output5"></code>
+    </p>
+    <button onclick="Question5()">convert lowercase string to uppercase</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      6. Write a ts program to convert uppercase string to lowercase.
+    </h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Please Enter 1st String");<br>
+          let output6 = document.getElementById("output6") as HTMLDivElement | null;<br>
+          if (output6 && userString1 ) {<br>
+            output6.innerHTML = `uppercase ${userString1} : lowercase ${userString1.toLowerCase()} `;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output6"> </code>
+    </p>
+    <button onclick="Question6()">
+      convert uppercase string to lowercase
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      7. Write a ts program to toggle case of each character of a string.
+    </h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Please Enter 1st String");<br>
+          let output7 = document.getElementById("output7") as HTMLDivElement | null;<br>
+          if (output7 && userString1) {<br>
+            let newString: string = "";<br>
+            for (let i = 0; i <= userString1.length; i++) {<br>
+              if (userString1[i] == userString1[i].toLowerCase()) {<br>
+                newString = newString + userString1[i].toUpperCase();<br>
+              } else {<br>
+                newString = newString + userString1[i].toLowerCase();<br>
+              }<br>
+              output7.innerHTML = `toggle case ${userString1} : ${newString} `;<br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output7"> </code>
+    </p>
+    <button onclick="Question7()">
+      toggle case of each character of a string
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      8. Write a ts program to find total number of alphabets,
+      digits or special character in a string.
+    </h2>
+    <p>
+      <code>
+
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output8"> </code>
+    </p>
+    <button onclick="Question8()">
+      alphabets, digits or special character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+  <div>
+    <h2>
+      9. Write a ts program to count total number of vowels and consonants in a string.
+    </h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Please Enter 1st String");<br>
+          let output9 = document.getElementById("output9") as HTMLDivElement | null;<br>
+          if (output9 && userString1) {<br>
+            userString1=userString1.toLowerCase();<br>
+            let vowels: number = 0;<br>
+            let consonants: number = 0;<br>
+            for (let i = 0; i <= userString1.length; i++) {<br>
+              if(userString1[i] == 'a' || userString1[i] == 'e' || userString1[i] == 'i' || userString1[<br>i] == 'o' || userString1[i] == 'u')    {
+                vowels++;<br>
+              }<br>
+              else if(userString1[i]>='a' && userString1[i] <= 'z' ) {<br>
+                consonants++;<br>
+              }<br>
+              output9.innerHTML = `String is : ${userString1}<br>
+                total number of vowels is : ${vowels}<br>
+                total number of consonants is : ${consonants}`;<br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output9"> </code>
+    </p>
+    <button onclick="Question9()">total number of vowels and consonants</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>10. Write a ts program to count total number of words in a string.</h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Please Enter 1st String");<br>
+          let output10 = document.getElementById("output10") as HTMLDivElement | null;<br>
+          if (output10 && userString1) {<br>
+            userString1 = userString1.toLowerCase();<br>
+            let words: number = 0;<br>
+            for (let i = 0; i <= userString1.length - 1; i++) {<br>
+              if (userString1.split(" ")[i]) {<br>
+                words++;<br>
+              }<br>
+              output10.innerHTML = `userString1ing is : ${userString1}<br><br>
+                total number of words is : ${words}<br>`;<br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output10"> </code>
+    </p>
+    <button onclick="Question10()">count total number of words in a string</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>11. Write a ts program to find reverse of a string.</h2>
+    <p>
+      <code>
+          let userString: string | null = prompt("Please Enter String");<br>
+          let output11 = document.getElementById("output11") as HTMLDivElement | null;<br>
+          if (output11 && userString) {<br>
+            output11.innerHTML = `reverse of a string ${userString} is :<br> ${userString.split("")<br>.reverse()<br>.join("")}`;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output11"> </code>
+    </p>
+    <button onclick="Question11()">
+      find reverse of a string
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      12. Write a ts program to check whether a string is palindrome or not.
+    </h2>
+    <p>
+      <code>
+          let userString: string | null = prompt("Please Enter String");<br>
+          let output12 = document.getElementById("output12") as HTMLDivElement | null;<br>
+          if (output12 && userString) {<br>
+            if(userString.split("")
+            .reverse().join("")==userString){<br>
+              output12.innerHTML = `string ${userString} is palindrome :<br> ${userString.split("")<br>.reverse()<br>.join("")}`;<br>
+            }<br>
+            else{<br>
+              output12.innerHTML = `string ${userString} is not palindrome :<br> ${userString.split("")<br>.reverse()<br>.join("")}`;<br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output12"> </code>
+    </p>
+    <button onclick="Question12()">
+      string is palindrome or not
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>13. Write a ts program to reverse order of words in a given string</h2>
+    <p>
+      <code>
+          let userString: string | null = prompt("Please Enter String");<br>
+          let output13 = document.getElementById("output13") as HTMLDivElement | null;<br>
+          if (output13 && userString) {<br>
+            output13.innerHTML = `reverse of words ${userString} is : ${userString<br>
+              .split(" ")<br>
+              .reverse()<br>
+              .join(" ")}`;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output13"> </code>
+    </p>
+    <button onclick="Question13()">
+      reverse order of words in a given string
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>14. Write a ts program to find first occurrence of a character in a given string.</h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Enter  the string");<br>
+          let userString2: string | null = prompt("Enter character to be searched");<br>
+          let output14 = document.getElementById("output14") as HTMLDivElement | null;<br>
+          if (output14 && userString1 && userString2) {<br>
+            for (let i = 0; i <= userString1.length; i++) {<br>
+              if (userString1[i] == userString2) {<br>
+                output14.innerHTML = `character ${userString2}  is first occurrence at location : ${[
+                  i+1
+                ]}`;<br>
+                break;<br>
+              }<br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output14"> </code>
+    </p>
+    <button onclick="Question14()">
+      find first occurrence of a character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      15. Write a ts program to find last occurrence of a character in a given string.
+    </h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Enter  the string");<br>
+          let userString2: string | null = prompt("Enter character to be searched");<br>
+          let output15 = document.getElementById("output15") as HTMLDivElement | null;<br>
+          if (output15 && userString1 && userString2) {<br>
+            for (let i = 0; i <= userString1.length; i++) {<br>
+              if (userString1[i] == userString2) {<br>
+                output15.innerHTML = `character ${userString2}  is last occurrence at location : ${[<br>
+                  i+1,<br>
+                ]}`; <br>
+              }<br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output15"> </code>
+    </p>
+    <button onclick="Question15()">
+      find last occurrence of a character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>16. Write a ts program to search all occurrences of a character in given string.</h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Enter  the string");<br>
+          let userString2: string | null = prompt("Enter character to be searched");<br>
+          let output16 = document.getElementById("output16") as HTMLDivElement | null;<br>
+          if (output16 && userString1 && userString2) {<br>
+            let occurrence:number=0<br>
+            for (let i = 0; i <= userString1.length; i++) {<br>
+              if (userString1[i] == userString2) {<br>
+                occurrence++<br>
+              }<br>
+              output16.innerHTML = `all occurrences of a character ${userString2}  is  : ${occurrence}`; <br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output16"> </code>
+    </p>
+    <button onclick="Question16()">
+      search all occurrences of a character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      17. Write a ts program to count occurrences of a character in given string.
+    </h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Enter  the string");<br>
+          let userString2: string | null = prompt("Enter character to be searched");<br>
+          let output17 = document.getElementById("output17") as HTMLDivElement | null;<br>
+          if (output17 && userString1 && userString2) {<br>
+            let occurrence:number=0<br>
+            for (let i = 0; i <= userString1.length; i++) {<br>
+              if (userString1.charAt(i) == userString2) {<br>
+                occurrence++<br>
+              }<br>
+              output17.innerHTML = `count occurrences of a character ${userString2}  is  : ${occurrence}`; <br>
+            }<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output17"> </code>
+    </p>
+    <button onclick="Question17()">
+      occurrences of a character in given string
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      18. Write a ts program to find highest frequency character in a string.
+    </h2>
+    <p>
+      <code>
+          var str: string | null = prompt("Please Enter String");<br>
+          if (str) {<br>
+            let char: string = "";<br>
+            for (var i = 0; i < str.length; i++) {<br>
+              if (str.indexOf(str[i]) < str.lastIndexOf(str[i])) {<br>
+                char = str[i];<br>
+                console.log("Char", char);<br>
+                break;<br>
+              }<br>
+            }<br>
+            let output = <HTMLElement>document.getElementById("output18");<br>
+            output.innerHTML +=
+              " User Input string :" + str + "<br> Higher frequency character : " + char;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output18"> </code>
+    </p>
+    <button onclick="Question18()">
+      find highest frequency character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>19. Write a ts program to find lowest frequency character in a string.</h2>
+    <p>
+      <code>
+          var str: string | null = prompt("Please Enter String");<br>
+          if (str) {<br>
+            let char: string = "";<br>
+            for (var i = 0; i < str.length; i++) {<br>
+              if (str.indexOf(str[i]) >= str.lastIndexOf(str[i])) {<br>
+                char +=str[i];<br>
+                console.log("Char", char);<br>
+              }<br>
+            }<br>
+            let output = <HTMLElement>document.getElementById("output18");<br>
+            output.innerHTML +=
+              " User Input string :" + str + "<br> Lower frequency character : " + char;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output19"> </code>
+    </p>
+    <button onclick="Question19()">
+      find lowest frequency character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      20. Write a ts program to count frequency of each character in a string.
+    </h2>
+    <p>
+      <code>
+          var str: string | null = prompt("Please Enter String");<br>
+            let obj = {};<br>
+            if (str) {<br>
+              for (let i = 0; i < str.length; i++) {<br>
+                if (obj[str[i]] == undefined) {<br>
+                  obj[str[i]] = 1;<br>
+                } else {<br>
+                  obj[str[i]] += 1;<br>
+                }<br>
+              }<br>
+              let output = <HTMLElement>document.getElementById("output20");<br>
+              output.innerHTML +=<br>
+                " User Input string :" +<br>
+                str +
+                "<br> frequency of each character: " +<br>
+                JSON.stringify(obj);<br>
+            }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output20"> </code>
+    </p>
+    <button onclick="Question20()">
+      count frequency of each character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>21. Write a ts program to remove first occurrence of a character from string.</h2>
+    <p>
+      <code>
+          let userString1: string | null = prompt("Enter  the string");<br>
+          let userString2: string | null = prompt("Enter character to be searched");<br>
+          let output21 = document.getElementById("output21") as HTMLDivElement | null;<br>
+          if (output21 && userString1 && userString2) {<br>
+              let newString:string=''<br>
+          for (let i = 0; i <= userString1.length; i++) {<br>
+          if (userString1[i] == userString2) {<br>
+            newString =  userString1.replace(userString1[i], '')<br>
+          }<br>
+          output21.innerHTML=`remove first occurrence of a character ${userString2}  is : ${newString}`;<br>
+      }
+  }
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output21"> </code>
+    </p>
+    <button onclick="Question21()">
+      remove first occurrence of a character
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>22. Write a ts program to remove last occurrence of a character from string.</h2>
+    <p>
+      <code>
+
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output22"> </code>
+    </p>
+    <button onclick="Question22()">remove last occurrence of a character</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+  <div>
+    <h2>23. Write a ts program to remove all occurrences of a character from string.</h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let output23 = document.getElementById("output23") as HTMLDivElement | null;<br>
+        if (output23 && userString1 && userString2) {<br>
+          let newString:string=''<br>
+          for (let i = 0; i <= userString1.length; i++) {<br>
+            if (userString1[i] == userString2) {<br>
+              newString =  userString1.split(userString1[i]).join('');<br>
+            }<br>
+            output23.innerHTML = ` remove all occurrences of a character ${userString2}  is  :<br> ${newString}`;<br>
+          }<br>
+        }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output23"> </code>
+    </p>
+    <button onclick="Question23()">remove all occurrences of a character</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>24. Write a ts program to remove all repeated characters from a given string.</h2>
+    <p>
+      <code>
+        var str: string | null = prompt("Please Enter String");<br>
+        if (str) {<br>
+          let result: string = "";<br>
+          result =  str.split('')<br>
+            .filter(function(item, pos, self)<br>
+            {<br>
+              return self.indexOf(item) == pos;<br>
+            }<br>
+           ).join('');<br>
+          let output = <HTMLElement>document.getElementById("output24");<br>
+          output.innerHTML =<br>
+            " User Input string :" + str + "<br> Remove all repeated characters : " + result;<br>
+          }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output24"> </code>
+    </p>
+    <button onclick="Question24()">remove all repeated characters</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+  <div>
+    <h2>25. Write a ts program to replace first occurrence of a character with another in a string.</h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let userString3: string | null = prompt("Enter character to be replaced");<br>
+        let output25 = document.getElementById("output25") as HTMLDivElement | null;<br>
+        if (output25 && userString1 && userString2 && userString3) {<br>
+            let newString:string=''<br>
+            for (let i = 0; i <= userString1.length; i++) {<br>
+              if (userString1[i] == userString2) {<br>
+                newString =  userString1.replace(userString1[i], userString3)<br>
+              }<br>
+              output25.innerHTML=`replace first occurrence of a character <br> ${userString2}  is :${newString}`;<br>
+            }<br>
+        }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output25"> </code>
+    </p>
+    <button onclick="Question25()">replace first occurrence of a character</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      26. Write a ts program to replace last occurrence of a character with another in a string.
+    </h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let userString3: string | null = prompt("Enter character to be replaced");<br>
+        let output26 = document.getElementById("output26") as HTMLDivElement | null;<br>
+        if (output26 && userString1 && userString2 && userString3) {<br>
+          let newString: any ;<br>
+          let index1;<br>
+              index1 = (userString1.lastIndexOf(userString2)).toString();<br>
+              console.log(index1);<br>
+              console.log(userString1[index1]);<br>
+              newString=userString1<br>.replace(userString1[index1],userString3)<br>
+              console.log(newString);<br>
+              output26.innerHTML = `replace last occurrence of a <br>character ${userString2}  is :${newString}`;<br>
+            }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output26"> </code>
+    </p>
+    <button onclick="Question26()">replace last occurrence of a character</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>27. Write a ts program to replace all occurrences of a character with another in a string.</h2>
+    <p>
+      <code>
+        let userString1: any | null = prompt("Enter the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let userString3: string | null = prompt("Enter character to be replaced");<br>
+        let output27 = document.getElementById("output27") as HTMLDivElement | null;<br>
+        if (output27 && userString1 && userString2 && userString3) {<br>
+        let newString:string=''<br>
+        for (let i = 0; i <= userString1.length; i++) {<br>
+        if (userString1[i] == userString2) {<br>
+        newString = userString1.replaceAll(userString1[i],userString3);<br>
+        }<br>
+        output27.innerHTML = `replace all occurrences of a character ${userString2} is :<br>
+        ${newString}`;<br>
+        }<br>
+        }<br>
+      </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output27"> </code>
+    </p>
+    <button onclick="Question27()">replace all occurrences of a character</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      28. Write a ts program to find first occurrence of a word in a given string.
+    </h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let output28 = document.getElementById("output28") as HTMLDivElement | null;<br>
+        if (output28 && userString1 && userString2) {<br>
+          let str: number = 0;<br>
+          str = userString1.indexOf(userString2);<br>
+          output28.innerHTML = `first occurrence of a word ${userString1} is :<br> at location ${str}`;<br>
+        }  <br>
+      </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output28"> </code>
+    </p>
+    <button onclick="Question28()">
+      find first occurrence of a word
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>29. Write a ts program to find last occurrence of a word in a given string.</h2>
+    <p>
+      <code> 
+        let userString1: string | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let output29 = document.getElementById("output29") as HTMLDivElement | null;<br>
+        if (output29 && userString1 && userString2) {<br>
+          let str: number = 0;<br>
+          str = userString1.lastIndexOf(userString2);<br>
+          output29.innerHTML = `last occurrence of a word ${userString1} is :<br> at location ${str}`;<br>
+        }<br>
+      </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output29"> </code>
+    </p>
+    <button onclick="Question29()">last occurrence of a word </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      30. Write a ts program to search all occurrences of a word in given string.
+    </h2>
+    <p>
+      <code> 
+        let userString1: string | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let output30 = document.getElementById("output30") as HTMLDivElement | null;<br>
+        let count :number=1;<br>
+        if(userString1 && userString2 && output30){<br>
+        for (let i = 0; i < userString1.length; i++){<br>
+        if (userString2[i]==userString1[i])<br>
+            count++;<br>
+        }<br>
+        output30.innerHTML = `search all occurrences of a word ${userString2} is : ${count}`;<br>
+        }<br>
+      </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output30"> </code>
+    </p>
+    <button onclick="Question30()">search all occurrences of a word</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      31. Write a ts program to count occurrences of a word in a given string.
+    </h2>
+    <p>
+      <code> 
+        let userString1: string | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter word to be searched");<br>
+        let output31 = document.getElementById("output31") as HTMLDivElement | null;<br>
+        if (output31 && userString1 && userString2) {<br>
+          let occurrence: number = 0;<br>
+          for (let i = 0; i <= userString1.length; i++) {<br>
+            if (userString2==(userString1.split(' ')[i]))<br>
+            occurrence++;<br>
+            output31.innerHTML = `count occurrences of a word <br> ${userString2}  is  : ${occurrence}`;<br>
+          }<br>
+        }<br>
+      </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output31"> </code>
+    </p>
+    <button onclick="Question31()">
+      count occurrences of a word
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      32. Write a ts program to remove first occurrence of a word from string.
+    </h2>
+    <p>
+      <code> 
+          let userString1: any | null = prompt("Enter  the string");<br>
+          let userString2: string | null = prompt("Enter word to be searched");<br>
+          let output32 = document.getElementById("output32") as HTMLDivElement | null;<br>
+          if (output32 && userString1 && userString2) {<br>
+            userString1=userString1.split(" ")<br>
+                userString1.splice(userString1.indexOf(userString2), 1);<br>
+              output32.innerHTML = `remove first occurrence of word<br>
+              ${userString2}  is : ${userString1.join(' ')}`;<br>
+      </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output32"> </code>
+    </p>
+    <button onclick="Question32()">
+      remove first occurrence of a word
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>
+      33. Write a ts program to remove last occurrence of a word from string.
+    </h2>
+    <p>
+      <code> 
+          let userString1: any | null = prompt("Enter  the string");<br>
+          let userString2: string | null = prompt("Enter word to be searched");<br>
+          let output32 = document.getElementById("output32") as HTMLDivElement | null;<br>
+          if (output32 && userString1 && userString2) {<br>
+            userString1=userString1.split(" ")<br>
+                userString1.splice(userString1.lastIndexOf(userString2), 1);<br>
+              output32.innerHTML = `remove last occurrence of word<br>
+              ${userString2}  is : ${userString1.join(' ')}`;<br>
+      </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output33"> </code>
+    </p>
+    <button onclick="Question33()">
+      remove last occurrence of a word
+    </button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>34. Write a ts program to remove all occurrences of a character from string.</h2>
+    <p>
+      <code>
+        let userString1: any | null = prompt("Enter  the string");<br>
+        let userString2: string | null = prompt("Enter character to be searched");<br>
+        let output34 = document.getElementById("output34") as HTMLDivElement | null;<br>
+        if (output34 && userString1 && userString2) {<br>
+          var uniqueList = userString1.replaceAll(userString2, "");<br>
+          output34.innerHTML = ` remove all occurrences of a word <br> ${userString2}  is  : ${uniqueList}`;<br>
+        }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output34"> </code>
+    </p>
+    <button onclick="Question34()">remove all occurrences of a word</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>35. Write a ts program to trim leading white space characters from given string.</h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Please Enter String");<br>
+        let output35 = document.getElementById("output35") as HTMLDivElement | null;<br>
+        if (output35 && userString1) {<br>
+          output35.innerHTML = `trim leading white space <br>: ${userString1.trim()} `;<br>
+        }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output35"> </code>
+    </p>
+    <button onclick="Question35()">trim leading white space characters</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>36. Write a ts program to trim leading white space characters from given string.</h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Please Enter String");<br>
+        let output36 = document.getElementById("output36") as HTMLDivElement | null;<br>
+        if (output36 && userString1) {<br>
+          output36.innerHTML = `trim trailing white space <br>: ${userString1.trimEnd()} `;<br>
+        }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output36"> </code>
+    </p>
+    <button onclick="Question36()">trim trailing white space characters</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>37. Write a ts program to trim both leading and trailing white space characters from given string.</h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Please Enter String");<br>
+        let output37 = document.getElementById("output37") as HTMLDivElement | null;<br>
+        if (output37 && userString1) {<br>
+          output37.innerHTML = `trim both leading and trailing white space <br>: ${userString1.trim()} `;<br>
+        }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output37"> </code>
+    </p>
+    <button onclick="Question37()">trim both leading and trailing white space</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  <div>
+    <h2>38. Write a ts program to remove all extra blank spaces from given string.</h2>
+    <p>
+      <code>
+        let userString1: string | null = prompt("Please Enter String");<br>
+        let output38 = document.getElementById("output38") as HTMLDivElement | null;<br>
+        if (output38 && userString1) {<br>
+          output38.innerHTML = `trim both leading and trailing white space <br>: ${userString1.trim()} `;<br>
+        }<br>
+        </code>
+    </p>
+    <p>
+      Output : <br />
+      <code id="output38"> </code>
+    </p>
+    <button onclick="Question38()">remove all extra blank spaces</button>
+  </div>
+  <hr />
+  <!-- _______________________________________ -->
+
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
